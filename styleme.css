@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #393e46;
+    color: #4ecca3;
+    font-family: 'Lobster',cursive;
+}
+.refresh{
+    text-align: center;
+   margin: 30px;
+   font-size: 5rem;
+   display: flex;
+   justify-content: center;
+}
+.player{
+    text-align: center;
+    font-size: 2rem;
+     
+}
+.dice{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+
+}
+p{
+    margin: 32px 0px; 
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1:hover{
+    cursor:pointer;
+    color:cadetblue;
+   
+}

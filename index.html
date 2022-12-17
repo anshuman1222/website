@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="styleme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="refresh">
+        <h1>Refresh Me</h1>
+      </div>
+      <div class="dice">
+        <div class="player">
+          <p>Player1</p>
+          <img id="p1" src="images/dice1.png" alt="not available" />
+        </div>
+        <div class="player">
+          <p>Player2</p>
+          <img id="p2" src="images/dice2.png" alt="not available" />
+        </div>
+      </div>
+    </main>
+
+    <script>
+        let d=document.querySelector("h1");
+        d.onclick=()=>{
+let x=Math.random();
+let y=Math.random();
+
+x=Math.floor(x*6+1);
+y=Math.floor(y*6+1);
+let p1 =document.getElementById("p1");
+let p2=document.getElementById("p2");
+if(x==1){
+    p1.setAttribute("src","images/dice1.png");
+}
+if(x==2){
+    p1.setAttribute("src","images/dice2.png");
+}
+if(x==3){
+    p1.setAttribute("src","images/dice3.png");
+}
+if(x==4){
+    p1.setAttribute("src","images/dice4.png");
+}
+if(x==5){
+    p1.setAttribute("src","images/dice5.png");
+}
+if(x==6){
+    p1.setAttribute("src","images/dice6.png");
+}
+
+if(y==1){
+    p2.setAttribute("src","images/dice1.png");
+}
+if(y==2){
+    p2.setAttribute("src","images/dice2.png");
+}
+if(y==3){
+    p2.setAttribute("src","images/dice3.png");
+}
+if(y==4){
+    p2.setAttribute("src","images/dice4.png");
+}
+if(y==5){
+    p2.setAttribute("src","images/dice5.png");
+}
+if(y==6){
+    p2.setAttribute("src","images/dice6.png");
+}
+
+
+console.log(x,y);
+
+
+
+
+
+        }
+    </script>
+  </body>
+</html>
